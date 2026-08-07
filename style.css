@@ -3,13 +3,15 @@
 ========================================= */
 
 :root {
-    --black: #080808;
-    --dark: #101010;
-    --dark-soft: #151515;
-    --white: #f7f7f5;
-    --grey: #9a9a9a;
-    --grey-light: #d0d0cc;
-    --border: rgba(255, 255, 255, 0.12);
+    --black: #17212b;
+    --dark: #1e2b36;
+    --dark-soft: #263640;
+
+    --white: #f4f6f7;
+    --grey: #8d9aa3;
+    --grey-light: #c9d1d6;
+
+    --border: rgba(255, 255, 255, 0.13);
 
     --container: 1240px;
 
