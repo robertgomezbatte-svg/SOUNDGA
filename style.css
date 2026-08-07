@@ -1,18 +1,15 @@
-```css
 /* =========================================
    VARIABLES
 ========================================= */
 
 :root {
-    --black: #243541;
-    --dark: #2c3f4b;
-    --dark-soft: #354b58;
-
-    --white: #f4f6f7;
-    --grey: #91a0a9;
-    --grey-light: #cbd4d9;
-
-    --border: rgba(255, 255, 255, 0.14);
+    --black: #080808;
+    --dark: #101010;
+    --dark-soft: #151515;
+    --white: #f7f7f5;
+    --grey: #9a9a9a;
+    --grey-light: #d0d0cc;
+    --border: rgba(255, 255, 255, 0.12);
 
     --container: 1240px;
 
@@ -115,7 +112,7 @@ button {
 }
 
 .header.scrolled {
-    background: rgba(36, 53, 65, 0.92);
+    background: rgba(8, 8, 8, 0.88);
     backdrop-filter: blur(18px);
 }
 
@@ -216,14 +213,14 @@ button {
     background:
         radial-gradient(
             circle at 75% 50%,
-            rgba(150, 180, 195, 0.12),
+            rgba(255, 255, 255, 0.055),
             transparent 35%
         ),
         linear-gradient(
             120deg,
-            #243541 0%,
-            #2c3f4b 50%,
-            #263944 100%
+            #080808 0%,
+            #0d0d0d 50%,
+            #090909 100%
         );
 }
 
@@ -235,12 +232,12 @@ button {
 
     background-image:
         linear-gradient(
-            rgba(255, 255, 255, 0.025) 1px,
+            rgba(255,255,255,0.025) 1px,
             transparent 1px
         ),
         linear-gradient(
             90deg,
-            rgba(255, 255, 255, 0.025) 1px,
+            rgba(255,255,255,0.025) 1px,
             transparent 1px
         );
 
@@ -284,7 +281,7 @@ button {
 .hero h1 span {
     display: block;
 
-    color: #aab7be;
+    color: #777;
 
     font-weight: 400;
 }
@@ -297,7 +294,7 @@ button {
     font-size: 17px;
     line-height: 1.7;
 
-    color: var(--grey-light);
+    color: var(--grey);
 }
 
 .hero-buttons {
@@ -339,16 +336,16 @@ button {
 
 .button-primary:hover {
     transform: translateY(-3px);
-    background: #ffffff;
+    background: #ddd;
 }
 
 .button-secondary {
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    border: 1px solid var(--border);
     color: var(--grey-light);
 }
 
 .button-secondary:hover {
-    border-color: rgba(255, 255, 255, 0.5);
+    border-color: rgba(255,255,255,0.4);
     color: var(--white);
 }
 
@@ -365,7 +362,7 @@ button {
 
     font-size: 9px;
     letter-spacing: 0.2em;
-    color: #a0adb4;
+    color: #666;
 }
 
 .hero-line {
@@ -395,7 +392,7 @@ button {
     justify-content: center;
     gap: 8px;
 
-    opacity: 0.18;
+    opacity: 0.2;
 }
 
 .sound-wave span {
@@ -403,7 +400,7 @@ button {
 
     width: 2px;
 
-    background: #e6edf0;
+    background: var(--white);
 
     border-radius: 20px;
 
@@ -521,7 +518,7 @@ button {
 }
 
 .intro .section-label span:last-child {
-    border-color: #d8dde0;
+    border-color: #ddd;
 }
 
 .intro-grid {
@@ -550,7 +547,7 @@ button {
 
 .intro-text h2 em {
     font-style: normal;
-    color: #89969d;
+    color: #999;
 }
 
 .intro-text p {
@@ -561,7 +558,7 @@ button {
     font-size: 16px;
     line-height: 1.8;
 
-    color: #56636b;
+    color: #555;
 }
 
 
@@ -570,7 +567,7 @@ button {
 ========================================= */
 
 .services {
-    background: #2c3f4b;
+    background: #0c0c0c;
 }
 
 .section-heading {
@@ -599,7 +596,7 @@ button {
 .process-header h2 span,
 .projects-heading h2 span {
     display: block;
-    color: #9baab2;
+    color: #666;
 }
 
 .services-grid {
@@ -627,13 +624,13 @@ button {
 }
 
 .service-card:hover {
-    background: #354b58;
+    background: #131313;
 }
 
 .service-number {
     font-size: 10px;
     letter-spacing: 0.15em;
-    color: #9aa8af;
+    color: #555;
 }
 
 .service-icon {
@@ -641,7 +638,7 @@ button {
 
     font-size: 28px;
 
-    color: #d1dadd;
+    color: #aaa;
 }
 
 .service-card h3 {
@@ -664,7 +661,7 @@ button {
     font-size: 14px;
     line-height: 1.7;
 
-    color: #b0bcc2;
+    color: #777;
 }
 
 .service-arrow {
@@ -673,7 +670,7 @@ button {
     right: 30px;
     bottom: 28px;
 
-    color: #9aa8af;
+    color: #555;
 
     transition: var(--transition);
 }
@@ -706,7 +703,7 @@ button {
 }
 
 .process .section-label span:last-child {
-    border-color: #d8dde0;
+    border-color: #ddd;
 }
 
 .process-header p {
@@ -714,7 +711,7 @@ button {
 
     margin-top: 30px;
 
-    color: #66737b;
+    color: #666;
 
     line-height: 1.7;
 }
@@ -722,7 +719,7 @@ button {
 .process-list {
     margin-top: 90px;
 
-    border-top: 1px solid #d8dde0;
+    border-top: 1px solid #ddd;
 }
 
 .process-item {
@@ -736,7 +733,7 @@ button {
 
     padding: 36px 0;
 
-    border-bottom: 1px solid #d8dde0;
+    border-bottom: 1px solid #ddd;
 
     transition: padding var(--transition);
 }
@@ -747,7 +744,7 @@ button {
 }
 
 .process-number {
-    color: #89969d;
+    color: #999;
     font-size: 12px;
 }
 
@@ -766,14 +763,14 @@ button {
 
     margin-top: 8px;
 
-    color: #68757c;
+    color: #777;
 
     line-height: 1.6;
 }
 
 .process-icon {
     font-size: 20px;
-    color: #78858c;
+    color: #888;
 }
 
 
@@ -782,7 +779,7 @@ button {
 ========================================= */
 
 .projects {
-    background: #243541;
+    background: #0c0c0c;
 }
 
 .projects-heading {
@@ -804,7 +801,7 @@ button {
 
     margin-top: -20px;
 
-    color: #a9b5bb;
+    color: #777;
 
     line-height: 1.7;
 }
@@ -841,8 +838,8 @@ button {
     background:
         radial-gradient(
             circle at 50% 50%,
-            #50636e,
-            #2c3f4b
+            #242424,
+            #111
         );
 
     border: 1px solid var(--border);
@@ -861,7 +858,7 @@ button {
 
     letter-spacing: 0.15em;
 
-    color: #d2dadd;
+    color: #777;
 }
 
 .image-placeholder small {
@@ -869,7 +866,7 @@ button {
 
     font-size: 9px;
 
-    color: #a1afb6;
+    color: #444;
 }
 
 
@@ -908,8 +905,8 @@ button {
     background:
         linear-gradient(
             135deg,
-            #dce2e5,
-            #aebbc2
+            #ddd,
+            #aaa
         );
 }
 
@@ -921,13 +918,13 @@ button {
 
     letter-spacing: -0.05em;
 
-    color: #40515b;
+    color: #444;
 }
 
 .about-image-placeholder small {
     margin-top: 10px;
 
-    color: #687780;
+    color: #666;
 }
 
 .about-content h2 {
@@ -947,7 +944,7 @@ button {
 }
 
 .about-content h2 span {
-    color: #89969d;
+    color: #999;
 }
 
 .about-content > p {
@@ -955,7 +952,7 @@ button {
 
     margin-top: 32px;
 
-    color: #56636b;
+    color: #555;
 
     line-height: 1.8;
 }
@@ -969,7 +966,7 @@ button {
 
     padding-top: 30px;
 
-    border-top: 1px solid #d8dde0;
+    border-top: 1px solid #ddd;
 }
 
 .about-values div {
@@ -980,7 +977,7 @@ button {
 
 .about-values strong {
     font-size: 10px;
-    color: #89969d;
+    color: #999;
 }
 
 .about-values span {
@@ -997,7 +994,7 @@ button {
 
     overflow: hidden;
 
-    background: #2c3f4b;
+    background: #111;
 
     text-align: center;
 }
@@ -1015,7 +1012,7 @@ button {
 
     border-radius: 50%;
 
-    background: rgba(180, 205, 215, 0.09);
+    background: rgba(255,255,255,0.035);
 
     filter: blur(80px);
 }
@@ -1043,7 +1040,7 @@ button {
 
 .cta h2 span {
     display: block;
-    color: #a2afb6;
+    color: #666;
 }
 
 .cta-content > p:not(.eyebrow) {
@@ -1051,7 +1048,7 @@ button {
 
     margin: 30px auto 0;
 
-    color: #b4c0c5;
+    color: #777;
 
     line-height: 1.7;
 }
@@ -1075,9 +1072,9 @@ button {
 .footer {
     padding: 70px 0 30px;
 
-    background: #1f303b;
+    background: #080808;
 
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-top: 1px solid var(--border);
 }
 
 .footer-top {
@@ -1093,7 +1090,7 @@ button {
 
     margin-top: 18px;
 
-    color: #9ba9b0;
+    color: #666;
 
     font-size: 13px;
     line-height: 1.6;
@@ -1123,12 +1120,12 @@ button {
 
     letter-spacing: 0.15em;
 
-    color: #7f9099;
+    color: #555;
 }
 
 .footer-links a {
     font-size: 12px;
-    color: #aeb9be;
+    color: #888;
 
     transition: color var(--transition);
 }
@@ -1146,7 +1143,7 @@ button {
 
     padding-top: 25px;
 
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-top: 1px solid var(--border);
 
     font-size: 9px;
 
@@ -1154,7 +1151,7 @@ button {
 
     text-transform: uppercase;
 
-    color: #72838c;
+    color: #444;
 }
 
 
@@ -1255,7 +1252,7 @@ button {
         flex-direction: column;
         align-items: flex-start;
 
-        background: #243541;
+        background: #090909;
 
         transform: translateX(100%);
 
@@ -1397,4 +1394,3 @@ button {
     }
 
 }
-```
