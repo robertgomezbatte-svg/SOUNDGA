@@ -1,17 +1,18 @@
+```css
 /* =========================================
    VARIABLES
 ========================================= */
 
 :root {
-    --black: #17212b;
-    --dark: #1e2b36;
-    --dark-soft: #263640;
+    --black: #243541;
+    --dark: #2c3f4b;
+    --dark-soft: #354b58;
 
     --white: #f4f6f7;
-    --grey: #8d9aa3;
-    --grey-light: #c9d1d6;
+    --grey: #91a0a9;
+    --grey-light: #cbd4d9;
 
-    --border: rgba(255, 255, 255, 0.13);
+    --border: rgba(255, 255, 255, 0.14);
 
     --container: 1240px;
 
@@ -114,7 +115,7 @@ button {
 }
 
 .header.scrolled {
-    background: rgba(8, 8, 8, 0.88);
+    background: rgba(36, 53, 65, 0.92);
     backdrop-filter: blur(18px);
 }
 
@@ -215,14 +216,14 @@ button {
     background:
         radial-gradient(
             circle at 75% 50%,
-            rgba(255, 255, 255, 0.055),
+            rgba(150, 180, 195, 0.12),
             transparent 35%
         ),
         linear-gradient(
             120deg,
-            #080808 0%,
-            #0d0d0d 50%,
-            #090909 100%
+            #243541 0%,
+            #2c3f4b 50%,
+            #263944 100%
         );
 }
 
@@ -234,12 +235,12 @@ button {
 
     background-image:
         linear-gradient(
-            rgba(255,255,255,0.025) 1px,
+            rgba(255, 255, 255, 0.025) 1px,
             transparent 1px
         ),
         linear-gradient(
             90deg,
-            rgba(255,255,255,0.025) 1px,
+            rgba(255, 255, 255, 0.025) 1px,
             transparent 1px
         );
 
@@ -283,7 +284,7 @@ button {
 .hero h1 span {
     display: block;
 
-    color: #777;
+    color: #aab7be;
 
     font-weight: 400;
 }
@@ -296,7 +297,7 @@ button {
     font-size: 17px;
     line-height: 1.7;
 
-    color: var(--grey);
+    color: var(--grey-light);
 }
 
 .hero-buttons {
@@ -338,16 +339,16 @@ button {
 
 .button-primary:hover {
     transform: translateY(-3px);
-    background: #ddd;
+    background: #ffffff;
 }
 
 .button-secondary {
-    border: 1px solid var(--border);
+    border: 1px solid rgba(255, 255, 255, 0.2);
     color: var(--grey-light);
 }
 
 .button-secondary:hover {
-    border-color: rgba(255,255,255,0.4);
+    border-color: rgba(255, 255, 255, 0.5);
     color: var(--white);
 }
 
@@ -364,7 +365,7 @@ button {
 
     font-size: 9px;
     letter-spacing: 0.2em;
-    color: #666;
+    color: #a0adb4;
 }
 
 .hero-line {
@@ -394,7 +395,7 @@ button {
     justify-content: center;
     gap: 8px;
 
-    opacity: 0.2;
+    opacity: 0.18;
 }
 
 .sound-wave span {
@@ -402,7 +403,7 @@ button {
 
     width: 2px;
 
-    background: var(--white);
+    background: #e6edf0;
 
     border-radius: 20px;
 
@@ -520,7 +521,7 @@ button {
 }
 
 .intro .section-label span:last-child {
-    border-color: #ddd;
+    border-color: #d8dde0;
 }
 
 .intro-grid {
@@ -549,7 +550,7 @@ button {
 
 .intro-text h2 em {
     font-style: normal;
-    color: #999;
+    color: #89969d;
 }
 
 .intro-text p {
@@ -560,7 +561,7 @@ button {
     font-size: 16px;
     line-height: 1.8;
 
-    color: #555;
+    color: #56636b;
 }
 
 
@@ -569,7 +570,7 @@ button {
 ========================================= */
 
 .services {
-    background: #1e2b36;
+    background: #2c3f4b;
 }
 
 .section-heading {
@@ -598,7 +599,7 @@ button {
 .process-header h2 span,
 .projects-heading h2 span {
     display: block;
-    color: #666;
+    color: #9baab2;
 }
 
 .services-grid {
@@ -626,13 +627,13 @@ button {
 }
 
 .service-card:hover {
-    background: #131313;
+    background: #354b58;
 }
 
 .service-number {
     font-size: 10px;
     letter-spacing: 0.15em;
-    color: #555;
+    color: #9aa8af;
 }
 
 .service-icon {
@@ -640,7 +641,7 @@ button {
 
     font-size: 28px;
 
-    color: #aaa;
+    color: #d1dadd;
 }
 
 .service-card h3 {
@@ -663,7 +664,7 @@ button {
     font-size: 14px;
     line-height: 1.7;
 
-    color: #777;
+    color: #b0bcc2;
 }
 
 .service-arrow {
@@ -672,7 +673,7 @@ button {
     right: 30px;
     bottom: 28px;
 
-    color: #555;
+    color: #9aa8af;
 
     transition: var(--transition);
 }
@@ -705,7 +706,7 @@ button {
 }
 
 .process .section-label span:last-child {
-    border-color: #ddd;
+    border-color: #d8dde0;
 }
 
 .process-header p {
@@ -713,7 +714,7 @@ button {
 
     margin-top: 30px;
 
-    color: #666;
+    color: #66737b;
 
     line-height: 1.7;
 }
@@ -721,7 +722,7 @@ button {
 .process-list {
     margin-top: 90px;
 
-    border-top: 1px solid #ddd;
+    border-top: 1px solid #d8dde0;
 }
 
 .process-item {
@@ -735,7 +736,7 @@ button {
 
     padding: 36px 0;
 
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #d8dde0;
 
     transition: padding var(--transition);
 }
@@ -746,7 +747,7 @@ button {
 }
 
 .process-number {
-    color: #999;
+    color: #89969d;
     font-size: 12px;
 }
 
@@ -765,14 +766,14 @@ button {
 
     margin-top: 8px;
 
-    color: #777;
+    color: #68757c;
 
     line-height: 1.6;
 }
 
 .process-icon {
     font-size: 20px;
-    color: #888;
+    color: #78858c;
 }
 
 
@@ -781,7 +782,7 @@ button {
 ========================================= */
 
 .projects {
-    background: #17212b;
+    background: #243541;
 }
 
 .projects-heading {
@@ -803,7 +804,7 @@ button {
 
     margin-top: -20px;
 
-    color: #777;
+    color: #a9b5bb;
 
     line-height: 1.7;
 }
@@ -840,8 +841,8 @@ button {
     background:
         radial-gradient(
             circle at 50% 50%,
-            #242424,
-            #111
+            #50636e,
+            #2c3f4b
         );
 
     border: 1px solid var(--border);
@@ -860,7 +861,7 @@ button {
 
     letter-spacing: 0.15em;
 
-    color: #777;
+    color: #d2dadd;
 }
 
 .image-placeholder small {
@@ -868,7 +869,7 @@ button {
 
     font-size: 9px;
 
-    color: #444;
+    color: #a1afb6;
 }
 
 
@@ -907,8 +908,8 @@ button {
     background:
         linear-gradient(
             135deg,
-            #ddd,
-            #aaa
+            #dce2e5,
+            #aebbc2
         );
 }
 
@@ -920,13 +921,13 @@ button {
 
     letter-spacing: -0.05em;
 
-    color: #444;
+    color: #40515b;
 }
 
 .about-image-placeholder small {
     margin-top: 10px;
 
-    color: #666;
+    color: #687780;
 }
 
 .about-content h2 {
@@ -946,7 +947,7 @@ button {
 }
 
 .about-content h2 span {
-    color: #999;
+    color: #89969d;
 }
 
 .about-content > p {
@@ -954,7 +955,7 @@ button {
 
     margin-top: 32px;
 
-    color: #555;
+    color: #56636b;
 
     line-height: 1.8;
 }
@@ -968,7 +969,7 @@ button {
 
     padding-top: 30px;
 
-    border-top: 1px solid #ddd;
+    border-top: 1px solid #d8dde0;
 }
 
 .about-values div {
@@ -979,7 +980,7 @@ button {
 
 .about-values strong {
     font-size: 10px;
-    color: #999;
+    color: #89969d;
 }
 
 .about-values span {
@@ -996,7 +997,7 @@ button {
 
     overflow: hidden;
 
-    background: #111;
+    background: #2c3f4b;
 
     text-align: center;
 }
@@ -1014,7 +1015,7 @@ button {
 
     border-radius: 50%;
 
-    background: rgba(255,255,255,0.035);
+    background: rgba(180, 205, 215, 0.09);
 
     filter: blur(80px);
 }
@@ -1042,7 +1043,7 @@ button {
 
 .cta h2 span {
     display: block;
-    color: #666;
+    color: #a2afb6;
 }
 
 .cta-content > p:not(.eyebrow) {
@@ -1050,7 +1051,7 @@ button {
 
     margin: 30px auto 0;
 
-    color: #777;
+    color: #b4c0c5;
 
     line-height: 1.7;
 }
@@ -1074,9 +1075,9 @@ button {
 .footer {
     padding: 70px 0 30px;
 
-    background: #080808;
+    background: #1f303b;
 
-    border-top: 1px solid var(--border);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .footer-top {
@@ -1092,7 +1093,7 @@ button {
 
     margin-top: 18px;
 
-    color: #666;
+    color: #9ba9b0;
 
     font-size: 13px;
     line-height: 1.6;
@@ -1122,12 +1123,12 @@ button {
 
     letter-spacing: 0.15em;
 
-    color: #555;
+    color: #7f9099;
 }
 
 .footer-links a {
     font-size: 12px;
-    color: #888;
+    color: #aeb9be;
 
     transition: color var(--transition);
 }
@@ -1145,7 +1146,7 @@ button {
 
     padding-top: 25px;
 
-    border-top: 1px solid var(--border);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
 
     font-size: 9px;
 
@@ -1153,7 +1154,7 @@ button {
 
     text-transform: uppercase;
 
-    color: #444;
+    color: #72838c;
 }
 
 
@@ -1254,7 +1255,7 @@ button {
         flex-direction: column;
         align-items: flex-start;
 
-        background: #090909;
+        background: #243541;
 
         transform: translateX(100%);
 
@@ -1396,3 +1397,4 @@ button {
     }
 
 }
+```
